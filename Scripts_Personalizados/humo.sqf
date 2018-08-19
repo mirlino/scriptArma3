@@ -1,7 +1,8 @@
 /*
 Humo
 Descripción:
-Humo: Puede ser colocado en un objeto del juego o en una lógica de juego en módulos.
+Humo: Puede ser colocado en el init en un objeto del juego o en una lógica de juego en módulos.
+Tambien puede ser colocado en posiciones especificas de un vehiculo.
 
 Ejemplo:*/
 humo1 = "test_EmptyObjectForSmoke" createVehicle position this; humo1 setpos (getpos smoking_wreck);
@@ -11,7 +12,8 @@ humo1 = "test_EmptyObjectForSmoke" createVehicle position this; humo1 setpos (ge
 /*Caso 2:
 
 Descripción:
-Humo con fuego: Puede ser colocado en un objeto del juego o en una lógica de juego.
+Humo con fuego: Puede ser colocado en el init de un objeto del juego o en una lógica de juego.
+Tambien puede ser colocado en posiciones especificas de un vehiculo.
 
 Ejemplo:*/
 FuegoHumo = "test_EmptyObjectForFireBig" createVehicle (position this);
