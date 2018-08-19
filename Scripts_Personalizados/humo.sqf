@@ -1,10 +1,4 @@
 /*
-****************
-Por redburn
-****************
-*/
-
-/*
 Humo
 Descripción:
 Humo: Puede ser colocado en un objeto del juego o en una lógica de juego en módulos.
