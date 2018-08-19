@@ -7,7 +7,7 @@ Tambien puede ser colocado en posiciones especificas de un vehiculo.
 Ejemplo:*/
 humo1 = "test_EmptyObjectForSmoke" createVehicle position this; humo1 setpos (getpos smoking_wreck);
 
-//Donde Smoke1 Sería el nombre de la variable(nombre de objeto).
+//Donde humo1 Sería el nombre de la variable(nombre de objeto).
 
 /*Caso 2:
 
