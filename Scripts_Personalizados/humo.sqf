@@ -1,9 +1,16 @@
-/*Humo
+/*
+****************
+Por redburn
+****************
+*/
+
+/*
+Humo
 Descripción:
 Humo: Puede ser colocado en un objeto del juego o en una lógica de juego en módulos.
 
 Ejemplo:*/
-smoke1 = "test_EmptyObjectForSmoke" createVehicle position this; smoke1 setpos (getpos smoking_wreck);
+humo1 = "test_EmptyObjectForSmoke" createVehicle position this; humo1 setpos (getpos smoking_wreck);
 
 //Donde Smoke1 Sería el nombre de la variable(nombre de objeto).
 
