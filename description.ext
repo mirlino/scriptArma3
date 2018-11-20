@@ -2,9 +2,9 @@
 ************************************************
 @Editor:    	Redburn
 @Para:      	FAM
-@Date:      	29/10/2018
+@Date:      	19/11/2018
 @Version:   	NONE
-@Descripcion:	Carga proceso de inicio de misión
+@Descripcion:	Carga proceso de inicio de misión ejemplo
 ************************************************
 */
 
@@ -15,30 +15,24 @@ class Header 				// Tipo de mision, Cantidad minima y maxima de jugadores admiti
 {
 	gameType 	=  coop; 	// Tipo de juego
 	minPlayers 	=  1; 		// Minimo de Jugadores soportados
-	maxPlayers	=  10; 		// Maximo de jugadores soportados
+	maxPlayers	=  99; 		// Maximo de jugadores soportados
 };
 
 
-Author 			 = "FAM";
-OnLoadName       = "De la escoba a la Aspiradora.";
-briefingName 	 = "De la escoba a la Aspiradora.";
-OnLoadMission    = "Urgente, llegaron informes de un Artefacto Peligroso!.";
-overviewText 	 = "Competencia Pre-Liga FAM Cap.3";
-overviewPicture	 = "mision_fam3.jpg";
-loadScreen		 = "mision_fam3.jpg";
+Author 		 = "FAM";
+OnLoadName       = "EJEMPLO DE MISION."; //MUESTRA EL TITULO DE MISION EN LA PRECARGA
+briefingName 	 = "EJEMPLO DE MISION."; //MUESTRA EL TITULO AL SELECCIONAR LA MISION
+OnLoadMission    = "Descripcion de la mision."; //BREVE DESCRIPCION DE LA MISION MOSTRADO EN LA PRECARGA
+overviewText 	 = "Descripcion de la mision."; //BREVE DESCRIPCION DE LA MISION MOSTRADO AL SELECCIONAR MISION
+overviewPicture	 = "IMG.jpg"; //IMAGEN A MOSTRAR AL SELECCIONAR MISION
+loadScreen	 = "IMG.jpg"; //IMAGEN A MOSTRAR AL PRECARGAR MISION
 
-//respawn = 0;
-//disabledAI = 0;
-
-
-#include "scripts\DEFUSE\common.hpp"
-#include "scripts\DEFUSE\explosivePad.hpp"
-#include "GUI\pantallaFinal.h"
+#include "GUI\pantallaFinal.h" //TABLA FINAL FAM
 
 //Notificacion
 class cfgNotifications
 {
-	#include "scripts\NOTIFICATIONS\cfgNotifications.hpp"
+	#include "scripts\NOTIFICATIONS\cfgNotifications.hpp" //RUTA CONFIGURACION DE NOTIFICACIONES
 };
 //FIN Notificacion.
 
@@ -46,73 +40,16 @@ class cfgNotifications
 class CfgSounds 
 {
 	sounds[] = {}; 
-	#include "scripts\DEFUSE\sounds\cfgSounds.hpp"
+	#include "scripts\sounds\cfgSounds.hpp" //RUTA CONFIGURACION DE SONIDOS
 };
 //FIN sonidos
 
 //funciones
 class CfgFunctions 
 {
-	#include "scripts\DEFUSE\functions\cfgFunctions.hpp"
-	#include "funciones\cfgFunctions.hpp"
+	#include "funciones\cfgFunctions.hpp" //RUTA CONFIGURACION DE FUNCIONES
 };
 //FIN funciones
-
-
-//PRESENTACION
-class RscTitles 
-{
-    class RscLogoA
-    {
-	    idd = -1;
-	    duration = 3;
-	    fadeIn = 0;
-	    fadeOut = 0;
-	    controls[] = {RsclogoPicture};
-        
-		class RsclogoPicture
-        {
-	        idc = -1;
-	        type = 0;
-	        style = 0x30;
-	        x = SafeZoneX + SafeZoneW/2 - 0.6274510/2;
-	        y = SafeZoneY + SafeZoneH/2 - 0.8366013/2;
-	        w = 0.6274510;
-            h = 0.8366013;
-	        font = "PuristaMedium";
-	        sizeEx = 0;
-	        colorBackground[] = {0,0,0,0};
-	        colorText[] = {1,1,1,1};
-	        text = "img\creadorMision.paa";
-	    };
-    };
-
-    class RscLogoB
-    {
-	    idd = -1;
-	    duration = 3;
-	    fadeIn = 0;
-	    fadeOut = 0;
-	    controls[] = {RsclogoPicture};
-        
-		class RsclogoPicture
-        {
-	        idc = -1;
-	        type = 0;
-	        style = 0x30;
-	        x = SafeZoneX + SafeZoneW/2 - 0.6274510/2;
-	        y = SafeZoneY + SafeZoneH/2 - 0.8366013/2;
-	        w = 0.6274510; 
-            h = 0.8366013;
-	        font = "PuristaMedium";
-	        sizeEx = 0;
-	        colorBackground[] = {0,0,0,0};
-	        colorText[] = {1,1,1,1};
-	        text = "img\Milsim.paa";
-	    };
-    };
-};
-//FIN PRESENTACION
 
 
 //Finalizando la Misión
